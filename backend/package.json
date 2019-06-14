@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "ts-node-dev --respawn src/index.ts",
-    "db:init": "mongoimport -d  -c  --type CSV --file data/loan.csv --headerline",
+    "db:init": "mongoimport -d  -c  --type CSV --file data/.csv --headerline",
     "build": "rimraf ./build && tsc && node build/index.js"
   },
   "devDependencies": {
